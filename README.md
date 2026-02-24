@@ -1,1 +1,1 @@
-# PA-1F-grupo-B
+Programação e algoritmo
