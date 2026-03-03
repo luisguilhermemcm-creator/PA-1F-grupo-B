@@ -1,0 +1,167 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPNzk0+7G2LDoKlZoOq10az",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/luisguilhermemcm-creator/PA-1F-grupo-B/blob/main/(aula_02)_Hello_world.area%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "uY3hr95AMEEP",
+        "outputId": "5a16190c-4133-4e37-fe1a-c5ddbb63e1c9"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello World\n"
+          ]
+        }
+      ],
+      "source": [
+        "print (\"Hello World\")"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Aula do marcão\n",
+        "Área do quadrado"
+      ],
+      "metadata": {
+        "id": "0-k-oEf6go3G"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lado1 = 5\n",
+        "lado2 = 5\n",
+        "\n",
+        "#calculo da área\n",
+        "\n",
+        "area = lado1 * lado2\n",
+        "\n",
+        "#calculo da area de um quadrado\n",
+        "\n",
+        "areaquadrado = lado1 * lado1"
+      ],
+      "metadata": {
+        "id": "r1Z3IqnXgyzI"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print (area)\n",
+        "#l1*l2"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Z6yjZ3nijzGE",
+        "outputId": "53df7f5d-f0ed-438b-d060-59ee217f069a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "25\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print (areaquadrado)\n",
+        "#l1*l1"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "OuiuHGq9jg7v",
+        "outputId": "7323062f-0735-4915-ea24-cf023d09e3f6"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "25\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nome = \"Luis\"\n",
+        "idade = 15\n",
+        "altura = 1.8"
+      ],
+      "metadata": {
+        "id": "MEBczYIxlS5g"
+      },
+      "execution_count": 59,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(f\"nome : {nome}, Idade: {idade}, Altura: {altura}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "EbKyeInrnELe",
+        "outputId": "17a68c7b-ef4e-43d5-8ad1-7cf8790959ea"
+      },
+      "execution_count": 60,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "nome : Luis, Idade: 15, Altura: 1.8\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
