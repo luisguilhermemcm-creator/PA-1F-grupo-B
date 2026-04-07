@@ -1,0 +1,320 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMQhK6ftn5FK5LoTRiYLd/N",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/luisguilhermemcm-creator/PA-1F-grupo-B/blob/main/Prova_1%C2%B0F_Luis_Guilherme.\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 74,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "fM5JbW29oujN",
+        "outputId": "49a99c5e-148a-4762-e7b2-a00a2ecba9dd"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite sua idade: 56\n",
+            "Olá, você é adulto\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Luis Guilherme 1°F\n",
+        "\n",
+        "# 1\n",
+        "\n",
+        "#Crie um programa que leia a idade de uma pessoa e classifique conforme as regras abaixo:\n",
+        "\n",
+        "\t#Até 17 anos: Menor de idade\n",
+        "\t#De 18 a 59 anos: Adulto\n",
+        "\t#60 anos ou mais: Idoso\n",
+        "\n",
+        "  #Entrada\n",
+        "idade = int(input(\"Digite sua idade: \"))\n",
+        "\n",
+        "  #Processsamento\n",
+        "\n",
+        "if idade <= 17:\n",
+        "    print(\"Olá, você é menor de idade\")\n",
+        "\n",
+        "elif idade >= 18 and idade <= 59:\n",
+        "    print(\"Olá, você é adulto\")\n",
+        "\n",
+        "else:\n",
+        "    print(\"Olá, você é idoso\")\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 2\n",
+        "\n",
+        "#Crie um programa que leia o valor de uma compra e aplique o desconto conforme as regras:\n",
+        "\n",
+        "#Até R$100: sem desconto\n",
+        "#De R$101 a R$500: 10% de desconto\n",
+        "#Acima de R$500: 20% de desconto\n",
+        "\n",
+        "#Entrada\n",
+        "\n",
+        "valor = int (input(\"Digite o valor da compra: \"))\n",
+        "\n",
+        "#Processamento\n",
+        "\n",
+        "if valor <= 100:\n",
+        "    print(\"Você não tem desconto\")\n",
+        "    valor_final = valor\n",
+        "\n",
+        "elif valor >= 101 and valor <= 500:\n",
+        "    valor_desconto = valor - (valor * 0.1)\n",
+        "    print(f\"Você recebeu 10% de desconto. O valor com desconto é de R${valor_desconto}\")\n",
+        "\n",
+        "else:\n",
+        "    valor_desconto = valor - (valor * 0.2)\n",
+        "    print(f\"Você recebeu 20% de desconto. O valor com desconto é de R${valor_desconto}\")\n",
+        "\n",
+        "#Saída\n",
+        "\n",
+        "print(f\"O valor final da sua compra é de R${valor_desconto:}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2bH6UU59qTne",
+        "outputId": "a8da51f2-eb21-4c97-f8b2-d1e88146da27"
+      },
+      "execution_count": 75,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o valor da compra: 562\n",
+            "Você recebeu 20% de desconto. O valor com desconto é de R$449.6\n",
+            "O valor final da sua compra é de R$449.6\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 3\n",
+        "\n",
+        "#Crie um programa que leia três valores e verifique se eles podem formar um triângulo.\n",
+        "#Para isso, a soma de dois lados deve ser maior que o terceiro.\n",
+        "#Mostre uma mensagem informando se é ou não um triângulo válido.\n",
+        "\n",
+        "\n",
+        "lado1 = int(input(\"Digite o valor do primeiro lado: \"))\n",
+        "lado2 = int(input(\"Digite o valor do segundo lado: \"))\n",
+        "lado3 = int(input(\"Digite o valor do terceiro lado: \"))\n",
+        "\n",
+        "#Processamento\n",
+        "\n",
+        "if lado1 + lado2 > lado3 and lado1 + lado3 > lado2 and lado2 + lado3 > lado1:\n",
+        "  print(\"É um triângulo válido\")\n",
+        "\n",
+        "else:\n",
+        "  print(\"Não é um triângulo válido\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "oLGU71XbuBey",
+        "outputId": "1f89da3b-b90a-4a79-8f3f-7dc17b9ca2f2"
+      },
+      "execution_count": 76,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o valor do primeiro lado: 5\n",
+            "Digite o valor do segundo lado: 8\n",
+            "Digite o valor do terceiro lado: 6\n",
+            "É um triângulo válido\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 4\n",
+        "\n",
+        "#Crie um programa que leia a energia de um personagem (de 0 a 100) e classifique:\n",
+        "# 0: Morto\n",
+        "# 1 a 30: Crítico\n",
+        "# 31 a 70: Normal\n",
+        "# 71 a 100: Saudável\n",
+        "\n",
+        "#Entrada\n",
+        "\n",
+        "energia = int(input(\"Digite a energia do personagem:\"))\n",
+        "\n",
+        "#Processamento\n",
+        "\n",
+        "if energia == 0:\n",
+        "  print(\"O personagem está morto\")\n",
+        "\n",
+        "elif energia >= 1 and energia <= 30:\n",
+        "  print(\"O personagem está crítico\")\n",
+        "\n",
+        "elif energia >= 31 and energia <= 70:\n",
+        "  print(\"O personagem está normal\")\n",
+        "\n",
+        "else:\n",
+        "  print(\"O personagem está saudável\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_upifiCAwXFF",
+        "outputId": "5c26b7ce-6eb3-45be-9d50-f963d1733a31"
+      },
+      "execution_count": 77,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a energia do personagem:58\n",
+            "O personagem está normal\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 5\n",
+        "\n",
+        "#Crie um programa que leia a média final de um aluno e classifique:\n",
+        "#Média maior ou igual a 7: Aprovado\n",
+        "#Média entre 5 e 6.9: Recuperação\n",
+        "\n",
+        "#Entrada\n",
+        "\n",
+        "média = float (input (\"Digite a sua média: \"))\n",
+        "\n",
+        "#Processamento\n",
+        "\n",
+        "if média >= 7:\n",
+        "  print(f\"Aprovado\")\n",
+        "\n",
+        "\n",
+        "elif média >=5 and média <= 6.9:\n",
+        "  print (f\"Recuperação\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CQTyIEIXxp-i",
+        "outputId": "4bb0e0f2-e00b-4829-acc5-4ef10fd06d60"
+      },
+      "execution_count": 78,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a sua média: 8\n",
+            "Aprovado\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 6\n",
+        "\n",
+        "# Crie um programa que leia o salário de um funcionário e sua pontuação de desempenho.\n",
+        "# O programa deve calcular um bônus de acordo com as regras:\n",
+        "# Pontuação menor que 5: sem bônus\n",
+        "# Pontuação de 5 a 7: bônus de 5% do salário\n",
+        "# Pontuação de 8 a 9: bônus de 10% do salário\n",
+        "# Pontuação igual a 10: bônus de 15% do salário\n",
+        "\n",
+        "#Entrada\n",
+        "\n",
+        "salário = float(input(\"Digite o seu salário: \"))\n",
+        "pontuação = int(input(\"Digite a sua pontuação: \"))\n",
+        "\n",
+        "#Processamento\n",
+        "\n",
+        "if pontuação < 5:\n",
+        "  print(\"Você não receberá bônus\")\n",
+        "\n",
+        "elif pontuação >= 5 and pontuação <= 7:\n",
+        "  bonus = salário * 0.05\n",
+        "  salário + bonus\n",
+        "  print(f\"Você receberá um bônus de R${bonus} e seu salário será de {salário + bonus}\")\n",
+        "\n",
+        "elif pontuação >= 8 and pontuação <= 9:\n",
+        "  bonus2 = salário * 0.1\n",
+        "  salário + bonus2\n",
+        "  print(f\"Você receberá um bônus de R${bonus2} e seu salário será de {salário + bonus2}\")\n",
+        "\n",
+        "else :\n",
+        "  bonus3 = salário * 0.15\n",
+        "  salário + bonus3\n",
+        "  print(f\"Você receberá um bônus de R${bonus3} e seu salário será de {salário + bonus3}\")\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "X8UuEixuypo4",
+        "outputId": "db804571-1997-498e-feb0-634c1873bbbb"
+      },
+      "execution_count": 79,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o seu salário: 1500\n",
+            "Digite a sua pontuação: 8\n",
+            "Você receberá um bônus de R$150.0 e seu salário será de 1650.0\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
